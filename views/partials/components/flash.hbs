@@ -1,0 +1,8 @@
+<div class="flash-component">
+    <h3 class="flash-component__text">
+        {{{flash.message}}}
+    </h3>
+    {{#if flash.action}}
+        <a class="flash-component__link" href={{flash.action.href}}>{{flash.action.message}}</a>
+    {{/if}}
+</div>
