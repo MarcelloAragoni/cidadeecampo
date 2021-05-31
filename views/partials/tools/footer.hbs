@@ -453,9 +453,17 @@
     $('.TodasCategorias').mouseover(function(){
       $('.OverlayMenuTodas').show();
     });
-  
+
     $('.TodasCategorias').mouseout(function(){
       $('.OverlayMenuTodas').hide();
+    });
+
+    $('.nav-search-input').mouseover(function(){
+      $('.BoxBuscaPopUp').toggleClass('BoxAbertoMobile');
+    });
+
+    $('.nav-search-input').mouseout(function(){
+      $('.BoxBuscaPopUp').toggleClass('BoxAbertoMobile');
     });
 
     $('.VaiTerNetos').mouseout(function(){

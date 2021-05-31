@@ -2681,7 +2681,7 @@ li.item-action #btnSubimit:hover {
     align-items: center;
     justify-content: space-around;
     padding: 5px;
-    height: 50px;
+    height: 40px;
     z-index: 20;
     border-bottom: solid 1px var(--color-darkgreen);
   }
@@ -2694,7 +2694,7 @@ li.item-action #btnSubimit:hover {
     height: 27px;
     border-radius: 0px 25px 25px 0px;
     position: relative;
-    right: 32px;
+    right: 35px;
     top: -5px;
   }
 
@@ -3501,7 +3501,7 @@ li.item-action #btnSubimit:hover {
     width: 0%;
     height: 3.5rem;
     background: rgba(255, 255, 255, .98);
-    top: 3.8rem;
+    top: 3.2rem;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -3521,13 +3521,13 @@ li.item-action #btnSubimit:hover {
 
   .MenuNovoCasa{
     transition: all 1s ease;
-    transform: translate(0,-100%);
+    transform: translate(-200%, 0);
     max-width: 100%;
-    width: 100%;
-    height: 60%;
+    width: 90%;
+    height: 100%;
     background: var(--color-white);
     z-index: -1;
-    top: 0px;
+    top: -5px;
     position: fixed;
     list-style: none;
     display: flex;
@@ -3543,18 +3543,18 @@ li.item-action #btnSubimit:hover {
   }
 
   .MenuNovoCasa.MenuAbertoMobile{
-    transform: translate(0,0);
+    transform: translate(-92%,0);
   }
 
   .MenuNovoCasa.MenuAbertoMobile.AbreMenuMobile{
-    height: 90%;
+    height: 100%;
   }
 
   .MenuNovoCasa li.categoria-pai {
     display: flex;
     padding: 5px 2em;
     text-transform: capitalize;
-    color: var(--color-dark)!important;
+    color: var(--color-darkgreen)!important;
     font-size: 18px;
     align-items: center !important;
     justify-content: space-between;
@@ -3723,7 +3723,7 @@ li.item-action #btnSubimit:hover {
     padding-left: 0px;
     display: flex;
     flex-direction: column;
-    width: 23.4rem;
+    width: 21.1rem;
     padding-top: 0px;
     background-color: white;
     margin-left: 2rem;
@@ -3738,7 +3738,7 @@ li.item-action #btnSubimit:hover {
     padding-left: 0px;
     display: flex;
     flex-direction: column;
-    width: 23.4rem;
+    width: 21.1rem;
     padding-top: 0px;
     background-color: white;
     margin-left: 2rem;
@@ -3753,7 +3753,7 @@ li.item-action #btnSubimit:hover {
     padding-left: 0px;
     display: flex;
     flex-direction: column;
-    width: 23.4rem;
+    width: 21.1rem;
     padding-top: 0px;
     background-color: white;
     margin-left: 2rem;
@@ -3767,7 +3767,7 @@ li.item-action #btnSubimit:hover {
     padding-left: 0px;
     display: flex;
     flex-direction: column;
-    width: 23.4rem;
+    width: 21.1rem;
     padding-top: 0px;
     background-color: white;
     margin-left: 2rem;
@@ -3781,7 +3781,7 @@ li.item-action #btnSubimit:hover {
     padding-left: 0px;
     display: flex;
     flex-direction: column;
-    width: 23.4rem;
+    width: 21.1rem;
     padding-top: 0px;
     background-color: white;
     margin-left: 2rem;
@@ -3795,7 +3795,7 @@ li.item-action #btnSubimit:hover {
     padding-left: 0px;
     display: flex;
     flex-direction: column;
-    width: 23.4rem;
+    width: 21.1rem;
     padding-top: 0px;
     background-color: white;
     margin-left: 2rem;
@@ -3918,9 +3918,9 @@ li.item-action #btnSubimit:hover {
     flex: 1;
     color: var(--color-dark);
     font-size: 13px;
-    width: 9rem;
-    padding-left: 15px;
+    width: 0rem;
     outline: none;
+    padding: 0;
 }
 
   .BoxBuscaPopUp.BoxAbertoMobile input::placeholder{
@@ -4450,10 +4450,8 @@ li.item-action #btnSubimit:hover {
   .BoxBuscaPopUp input {
     padding: 1em;
     border: none;
-    border-bottom: thin solid var(--color-dark);
     margin: 0;
     background: transparent;
-    width: 20vw;
     outline: none;
   }
 
@@ -4466,7 +4464,7 @@ li.item-action #btnSubimit:hover {
     position: sticky;
     box-shadow: 0 0 10px rgba(000, 000, 000, .2);
     z-index: 5;
-    height: fit-content;
+    height: 5rem;
   }
 
   .HeaderUm {
@@ -4475,20 +4473,20 @@ li.item-action #btnSubimit:hover {
     width: 1180px;
     margin: 0 auto;
     align-items: center;
+    position: relative;
   }
 
   #search-form {
     margin-left: 25px;
-    width: auto;
     display: flex !important;
-    position: relative;
-    height: auto;
-    background-color: white;
+    position: absolute;
+    background-color: var(--color-white)!important;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    border: solid 1px #ccc;
-    border-radius: 5px;
+    right: 10rem;
+    width: 0;
+    height: 4.9rem;
   }
 
   * {
@@ -4508,18 +4506,27 @@ li.item-action #btnSubimit:hover {
   }
 
   #search-form input {
-    height: 26px;
-    border: none;
-    border-bottom: 1px solid var(--color-gray);
     box-shadow: none;
-    transition: var(--transition);
     flex: 1;
     box-sizing: border-box;
     color: var(--color-black-bg);
     font-size: 16px;
-    width: 45rem;
-    border-radius: 4px;
+    width: 0;
+    transition: all ease-in-out 1s;
+    position: absolute;
+    background-color: transparent;
+    z-index: 999;
+    right: 5px;
   }
+
+  .BoxAbertoMobile input{
+    width: 52rem!important;
+    border-bottom: thin solid var(--color-dark);
+    padding: 0.3em;
+    margin-right: 2rem;
+  }
+
+  
 
   #search-form input:focus {
     border: none;
@@ -4530,8 +4537,8 @@ li.item-action #btnSubimit:hover {
   #search-form button {
     background: transparent;
     border: none;
-    width: 26px;
-    height: 26px;
+    width: 3rem;
+    height: 3rem;
     right: 0px;
     cursor: pointer;
     display: flex;
@@ -4539,6 +4546,7 @@ li.item-action #btnSubimit:hover {
     justify-content: center;
     padding: 0 0 0 6px;
     color: var(--color-darkgreen);
+    position: absolute;
   }
 
   #search-form button img {
@@ -4548,10 +4556,9 @@ li.item-action #btnSubimit:hover {
   }
 
   .HeaderDois {
-    width: 100%;
+    width: 65%;
     height: auto;
     margin: 0 auto;
-    background-color: var(--color-yellow);
   }
 
   .HeaderDois ul {
@@ -4578,6 +4585,7 @@ li.item-action #btnSubimit:hover {
     list-style: none;
     display: flex;
     gap: 12px;
+    z-index: -1;
   }
 
   .HeaderCustomHtml ul:not(#teste > ul > div > li > ul) {
@@ -4747,7 +4755,7 @@ li.item-action #btnSubimit:hover {
     transition: all ease .3s;
     line-height: 1em;
     justify-self: center;
-    color: var(--color-white);
+    color: var(--color-black-bg);
     font-weight: bold;
     /*white-space: nowrap;*/
   }
@@ -5186,7 +5194,7 @@ li.item-action #btnSubimit:hover {
 
   .categoria-pai>a,
   .categoria-pai span>a {
-    color: var(--color-white) !important;
+    color: var(--color-black-bg) !important;
     text-decoration: none !important;
   }
 
@@ -5226,17 +5234,15 @@ li.item-action #btnSubimit:hover {
   }
 
   .BoxBuscaPopUp.BoxAbertoMobile {
-    width: 100%;
+    width: 56rem!important;
     background: #f9f9f9;
     position: fixed;
-    left: 0;
-    top: 0px;
     height: auto;
     z-index: 999;
     justify-content: center;
     align-items: center;
     display: flex;
-    color: var(--color-white);
+    height: 5rem;
   }
 
   .BoxBuscaPopUp.BoxAbertoDesktop {
