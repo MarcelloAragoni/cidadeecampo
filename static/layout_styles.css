@@ -1618,7 +1618,7 @@ body {
 
 .flash-component {
   align-items: center;
-  background-color: var(--color-darkgreen);
+  background-color: #4C5820;
   box-sizing: border-box;
   color: #ffffff;
   display: flex;
@@ -1651,7 +1651,9 @@ body {
 }
 
 .flash-component__text p {
-  display: inline
+  display: inline;
+  color: white;
+  font-weight: bold;
 }
 
 .flash-component__subtext {
@@ -2458,11 +2460,11 @@ body {
   --transition: all ease .3s;
   --color-dark: #313131;
   --color-white: #ffffff;
-  --color-darkgreen: #4C5820;
+  --color-darkblue: #123657;
   --color-orange-h: #EEEEEE;
   --color-gray: #5e5e5e;
   --color-gray-c: #f4f6f9;
-  --color-yellow: #E5C406;
+  --color-redorange: #EB593E;
 }
 
 .header-wrapper--fixed {
@@ -2484,7 +2486,6 @@ body {
 .BoxGridBanners p {
   font-size: 1.2em;
   text-align: center;
-  /* border-bottom: 3px solid var(--color-darkgreen); */
   color: var(--color-gray);
   text-transform: uppercase;
   white-space: pre-wrap;
@@ -2546,7 +2547,7 @@ div.contentTextMenu h3 {
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--color-darkgreen);
+  color: var(--color-darkblue);
 }
 
 div.contentTextMenu p {
@@ -2562,7 +2563,7 @@ div.boxNews {
   justify-content: center;
   align-items: center;
   padding-bottom: 1em;
-  background-color: var(--color-darkgreen);
+  background-color: var(--color-darkblue);
 }
 
 div.boxNews1 {
@@ -2633,7 +2634,7 @@ li.item-form input {
 }
 
 li.item-form input:focus {
-  border: 1px solid var(--color-darkgreen);
+  border: 1px solid var(--color-darkblue);
 }
 
 li.item-action {
@@ -2646,7 +2647,7 @@ li.item-action #btnSubimit {
   width: 48px;
   border: none;
   outline: none;
-  background-color: var(--color-yellow);
+  background-color: var(--color-redorange);
   opacity: 0.9;
   color: var(--color-white);
   font-size: 15px;
@@ -2677,13 +2678,13 @@ li.item-action #btnSubimit:hover {
 
   .HeaderUm {
     display: flex;
-    background-color: var(--color-white);
+    background-color: white;
     align-items: center;
     justify-content: space-around;
     padding: 5px;
-    height: 40px;
+    height: 50px;
     z-index: 20;
-    border-bottom: solid 1px var(--color-darkgreen);
+    border-bottom: solid 2px black;
   }
 
   #search-form {
@@ -2693,13 +2694,10 @@ li.item-action #btnSubimit:hover {
   #search-form > button{
     height: 27px;
     border-radius: 0px 25px 25px 0px;
-    position: relative;
-    right: 35px;
-    top: -5px;
   }
 
   .BoxCarrosselMarcas .slick-next.slick-arrow {
-    background: url('https://arquivos.fjmagazine.com.br/CarrosselMarcas/direita.png');
+    background: url('https://lunnar.com.br/cidadeecampo/icons/Direita.svg');
     width: 35px;
     height: 35px;
     border: none;
@@ -2711,11 +2709,11 @@ li.item-action #btnSubimit:hover {
     cursor: pointer;
     position: absolute;
     z-index: 999;
-    right: 16px;
+    right: 22px;
   }
 
   .BoxCarrosselMarcas .slick-prev.slick-arrow {
-    background: url('https://arquivos.fjmagazine.com.br/CarrosselMarcas/esquerda.png');
+    background: url('https://lunnar.com.br/cidadeecampo/icons/Esquerda.svg');
     width: 35px;
     height: 35px;
     border: none;
@@ -2782,8 +2780,8 @@ li.item-action #btnSubimit:hover {
     height: 17em;
     margin: 0;
     padding: 0;
-    left: 25px;
-    width: 93%;
+    left: 20px;
+    width: 94%;
   }
 
   .BoxCarrosselMarcas.BoxCarrosselCategorias{
@@ -2793,7 +2791,7 @@ li.item-action #btnSubimit:hover {
   
   .BoxCarrosselMarcas ul .slick-dots{
     position: absolute;
-    top: -.5rem;
+    top: 0.5rem;
     height: 4px;
     padding-top: 0;
     width: 100%;
@@ -2811,7 +2809,7 @@ li.item-action #btnSubimit:hover {
   }
 
   .BoxCarrosselCategorias ul .slick-dots .slick-active button {
-   background-color: #EB593E;
+   background-color: #E5C406;
   }
   
   .BoxCarrosselMarcas  .ListaCategorias .slick-dots li, .slick-dots li button {
@@ -2851,7 +2849,7 @@ li.item-action #btnSubimit:hover {
     width: 100%;
     position: fixed;
     bottom: 0px;
-    background: var(--color-yellow);
+    background: #E5C406;
     /* justify-content: space-between; */
     align-items: stretch;
     margin: 0px;
@@ -2862,7 +2860,6 @@ li.item-action #btnSubimit:hover {
     display: flex;
     padding: 0.4em;
     flex: 1;
-    /* text-align: center; */
     justify-content: center;
     align-items: center;
     position:relative;
@@ -2882,12 +2879,13 @@ li.item-action #btnSubimit:hover {
   }  
 
   #header-wrapper > header > div.HeaderUm > ul > li.IcoBuscaMobile{
+    width: auto;
+    height: auto;
   }
 
   .IcoBuscaMobile img{
-    width: 27px;
-    margin-right: -12px;
-    height: 27px;
+    width: 28px;
+    height: 28px;
   }
   
   .MenuMobile img{
@@ -2904,7 +2902,7 @@ li.item-action #btnSubimit:hover {
   }
 
   .IcoCart img{
-    width: 30px;
+    width: 36px;
   }
 
  
@@ -2912,8 +2910,8 @@ li.item-action #btnSubimit:hover {
     position: sticky;
     /* background-color: var(--color-dark); */
     padding: 10px;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     display: flex;
     /* box-shadow: 0 0 10px rgba(000, 000, 000, .2); */
     max-width: 100%;
@@ -2921,7 +2919,7 @@ li.item-action #btnSubimit:hover {
 
   .LogoTopo img {
     max-width: 7rem;
-    filter: invert(1);
+    margin-left: 5rem;
   }
 
   #header-wrapper > header > div.HeaderUm > div > a > img.logoDesktop{
@@ -2970,7 +2968,7 @@ li.item-action #btnSubimit:hover {
   .bg-FirstFooter{
     display: flex;
     flex-direction: column;
-    background-color: var(--color-darkgreen);
+    background-color: #4C5820;
   }
 
   .bg-FirstFooter .FirstFooter .TituloFooter {
@@ -3023,7 +3021,7 @@ li.item-action #btnSubimit:hover {
   }
 
   footer .FirstFooter {
-    background: var(--color-darkgreen);
+    background: #4C5820;
     padding: 1em 1em 0 1em;
     font-size: 14px;
   }
@@ -3032,7 +3030,7 @@ li.item-action #btnSubimit:hover {
     text-transform: uppercase;
     color: var(--color-white);
     padding: 5px 0em;
-    background-color: var(--color-yellow);
+    background-color: var(--color-redorange);
   }
 
   .TituloFooter-Mobile span {
@@ -3097,7 +3095,7 @@ li.item-action #btnSubimit:hover {
     width: 15px;
     transform: rotate(90deg);
     transition: all ease .3s;
-    background-color: var(--color-yellow);
+    background-color: #E5C406;
     border-radius: 50%;
     height: 15px;
   }
@@ -3226,7 +3224,7 @@ li.item-action #btnSubimit:hover {
       display: flex;
       width:126px;
       height: 126px;
-      border: 3px solid var(--color-darkgreen);
+      border: 3px solid var(--color-darkblue);
       border-radius: 60%;
       align-items: center;
       justify-content: center;
@@ -3330,7 +3328,7 @@ li.item-action #btnSubimit:hover {
   .menuInstitucionaisBox-Mobile {
     margin-top: 0px;
     /* margin-left: 5vw; */
-    background-color: var(--color-darkgreen);
+    background-color: var(--color-darkblue);
     padding-left: 0px;
     /* display: flex; */
     /* width: 72vw; */
@@ -3374,12 +3372,12 @@ li.item-action #btnSubimit:hover {
   .menuInstitucionaisBox-Mobile li:hover {
     color: var(--color-white);
     text-decoration: none;
-    background-color: var(--color-yellow);
+    background-color: var(--color-redorange);
   }
 
   li.MenuAtivoInstitucionais-Mobile {
     color: var(--color-white);
-    background: var(--color-darkgreen);
+    background: var(--color-darkblue);
   }
 
   #inst-Mobile {
@@ -3426,7 +3424,7 @@ li.item-action #btnSubimit:hover {
   }
 
   .TodasCategorias.categoria-pai.AbreMenuMobile #box-Mobile a:hover{
-    background-color: var(--color-darkgreen);
+    background-color: var(--color-darkblue);
     color:var(--color-white);
   }
 
@@ -3445,7 +3443,7 @@ li.item-action #btnSubimit:hover {
   }
 
   .TodasCategorias.categoria-pai.AbreMenuMobile #box-Mobile p{
-    color: var(--color-darkgreen);
+    color: var(--color-darkblue);
     font-weight: bold;
     text-align: center;
     font-size: 18px;
@@ -3488,7 +3486,7 @@ li.item-action #btnSubimit:hover {
     width: 8px;
     height: 8px;
     margin-right: -1.7em;
-    background: var(--color-darkgreen);
+    background: var(--color-darkblue);
     border-radius: 15px;
     padding: 0.2em;
   }
@@ -3497,68 +3495,80 @@ li.item-action #btnSubimit:hover {
 
   .BoxBuscaPopUp {
     transition: all 1s ease;
-    max-width: 100%;
-    width: 0%;
-    height: 3.5rem;
+    transform: translate(0,0);
+    width: 0px;
+    height: 40px;
     background: rgba(255, 255, 255, .98);
-    top: 3.2rem;
+    top: 3.9rem;
+    position: fixed;
     list-style: none;
     display: flex;
     flex-direction: column;
     padding: 6px 0 0 0;
-    overflow: unset;
-    border-radius: 0px;
-    border: 0.8px solid #ccc;
+    overflow: scroll;
     right: 0;
-    visibility: hidden;
-    align-items: center;
   }
 
 
   .BoxBuscaPopUp.BoxAbertoMobile{
+    
+transform: translate(0,0);
   }
 
 
   .MenuNovoCasa{
     transition: all 1s ease;
-    transform: translate(-200%, 0);
+    transform: translate(-200%,0);
     max-width: 100%;
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    height: 91%;
     background: var(--color-white);
     z-index: -1;
-    top: -5px;
+    top: 0;
     position: fixed;
     list-style: none;
     display: flex;
     flex-direction: column;
     padding: 10px 0 0 0;
-    overflow-x: unset;
+    overflow-x: hidden;
     overflow-y: scroll;
   }
 
+  .atendimento{
+
+padding-left: 4rem;
+
+padding-bottom: 2rem;
+}
+
+  .telefone{
+
+padding-left: 4rem;
+
+padding-top: 1.5rem;
+
+display: flex;
+
+flex-direction: column;
+}
+
   .TodasCategorias.AbreMenuMobile{
-    background-color: var(--color-darkgreen);
+    background-color: #4C5820;
     padding-bottom: 0!important;
   }
 
   .MenuNovoCasa.MenuAbertoMobile{
-    transform: translate(-92%,0);
-  }
-
-  .MenuNovoCasa.MenuAbertoMobile.AbreMenuMobile{
-    height: 100%;
+    transform: translate(-100%,0);
   }
 
   .MenuNovoCasa li.categoria-pai {
     display: flex;
     padding: 5px 2em;
     text-transform: capitalize;
-    color: var(--color-darkgreen)!important;
+    color: var(--color-dark)!important;
     font-size: 18px;
     align-items: center !important;
     justify-content: space-between;
-    padding-left: 8px;
     line-height: 35px;
   }
 
@@ -3596,7 +3606,7 @@ li.item-action #btnSubimit:hover {
   .MenuMobile.MenuAbertoMobileButton:after {
     content: '';
     position: absolute;
-    background-color: var(--color-darkgreen);
+    background-color: #4C5820;
     right: 0;
     bottom: -5px;
     left: 0;
@@ -3616,7 +3626,7 @@ li.item-action #btnSubimit:hover {
     font-size: 30px;
     width: 100%;
     height: 30px;
-    color: var(--color-yellow);
+    color: #E5C406;
     position: absolute;
     display: flex;
     align-items: center;
@@ -3636,7 +3646,7 @@ li.item-action #btnSubimit:hover {
   .IcoBuscaMobile.MenuAbertoMobileButton:after {
     content: '';
     position: absolute;
-    background-color: var(--color-darkgreen);
+    background-color: #4C5820;
     right: 0;
     bottom: -5px;
     left: 0;
@@ -3656,44 +3666,72 @@ li.item-action #btnSubimit:hover {
   }
 
   .MenuNovoCasa li.TodasCategorias.categoria-pai:first-child {
-    padding-top: 2rem;
-    padding-bottom: .5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 0;
   }
 
   .MenuNovoCasa li.TodasCategorias.categoria-pai {
-    flex-direction: column !important;
     align-items: center;
-    padding-top: 0em;
+    padding-top: 0;
     border-bottom: 1px solid #dfdbdb;
-    padding-bottom: 1.5vh;
+    padding-bottom: 0;
+    transition: 1s ease-in-out;
+    margin-top: 0;
+    line-height: 20px;
+  }
+
+  #header-wrapper > header > div > div.HeaderDois > .MenuNovoCasa > .BoxPai2Aberto{
+    transition: 1s ease-in-out;
+    margin-top: 17rem;
+  }
+
+  #header-wrapper > header > div > div.HeaderDois > .MenuNovoCasa > .BoxPai3Aberto{
+    transition: 1s ease-in-out;
+    margin-top: 17.8rem;
+  }
+
+  #header-wrapper > header > div > div.HeaderDois > ul > li.telefone.BoxPai3Aberto{
+    transition: 1s ease-in-out;
+    margin-top: 32.8rem;
   }
 
   .MenuNovoCasa li.TodasCategorias.categoria-pai a {
     font-weight: 900;
     text-decoration: none;
-    color: var(--color-darkgreen);
+    color: var(--color-darkblue);
   }
 
   .MenuNovoCasa li.TodasCategorias.AbreMenuMobile a {
     color:var(--color-white);
   }
 
-  .MenuNovoCasa .TodasCategorias.categoria-pai.AbreMenuMobile {
-    flex-direction: column !important;
+  .MenuNovoCasa .TodasCategorias.categoria-pai.AbreMenuMobile:not(ul) {
+    flex-direction: row!important;
     color: var(--color-white)!important;
   }
 
   .MenuNovoCasa li.TodasCategorias.categoria-pai .ArrowMenuMobile img,
   .MenuNovoCasa li.TodasCategorias.categoria-pai .ArrowMenuMobile svg {
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
   }
 
-  .MenuNovoCasa li.categoria-pai img,
+  .MenuNovoCasa li.categoria-pai img{
+    width: 35px;
+    height: 27px;
+    padding: 0.5em;
+    margin-top: 0em;
+    FONT-WEIGHT: 100;
+  }
+
+  .AbreMenuMobile img{
+    filter:brightness(0) invert(1)
+  }
+
   .MenuNovoCasa li.categoria-pai svg {
     width: 10px;
-    height: 11px;
+    height: 10px;
     margin-right: -1.7em;
-    background: var(--color-darkgreen);
+    background: #EDD650;
     border-radius: 15px;
     padding: .2em;
     margin-top: 0em;
@@ -3723,14 +3761,18 @@ li.item-action #btnSubimit:hover {
     padding-left: 0px;
     display: flex;
     flex-direction: column;
-    width: 21.1rem;
+    width: 23.4rem;
     padding-top: 0px;
     background-color: white;
-    margin-left: 2rem;
+    margin-left: 1.9rem;
     position: absolute;
-    transform: translate(0px, 0px);
-    visibility: hidden;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
+    top: 7rem;
+    overflow: hidden;
+    transition: height 1s;
+    height: 0;
+    line-height: 44px;
+    padding-left: 0!important;
   }
 
   .MenuNovoCasa li .BoxFilhos2 {
@@ -3738,14 +3780,38 @@ li.item-action #btnSubimit:hover {
     padding-left: 0px;
     display: flex;
     flex-direction: column;
-    width: 21.1rem;
-    padding-top: 0px;
+    width: 23.4rem;
     background-color: white;
     margin-left: 2rem;
     position: absolute;
-    transform: translate(0px, 0px);
-    visibility: hidden;
-    padding-bottom: 15px;
+    top: 10rem;
+    overflow: hidden;
+    height: 0px;
+    transition: height 1s ease-in-out;
+  }
+
+  #header-wrapper > header > div > div.HeaderDois > ul > li.TodasCategorias.categoria-pai.BoxPai2 > ul > li{
+    display: flex;
+    flex-direction: column;
+    line-height: 45px;
+  }
+
+  #header-wrapper > header > div > div.HeaderDois > ul > li.TodasCategorias.categoria-pai.BoxPai3 > ul > li{
+    display: flex;
+    flex-direction: column;
+    line-height: 45px;
+  }
+
+  #header-wrapper > header > div > div.HeaderDois > ul > li.TodasCategorias.categoria-pai.BoxPai4 > ul > li{
+    display: flex;
+    flex-direction: column;
+    line-height: 45px;
+  }
+
+  #header-wrapper > header > div > div.HeaderDois > ul > li.TodasCategorias.categoria-pai.BoxPai5 > ul > li{
+    display: flex;
+    flex-direction: column;
+    line-height: 45px;
   }
 
   .MenuNovoCasa li .BoxFilhos3 {
@@ -3753,13 +3819,14 @@ li.item-action #btnSubimit:hover {
     padding-left: 0px;
     display: flex;
     flex-direction: column;
-    width: 21.1rem;
-    padding-top: 0px;
+    width: 23.4rem;
     background-color: white;
     margin-left: 2rem;
     position: absolute;
-    transform: translate(0px, 0px);
-    visibility: hidden;
+    top: 13rem;
+    height: 0px;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
   }
 
   .MenuNovoCasa li .BoxFilhos4 {
@@ -3767,13 +3834,15 @@ li.item-action #btnSubimit:hover {
     padding-left: 0px;
     display: flex;
     flex-direction: column;
-    width: 21.1rem;
-    padding-top: 0px;
+    width: 20.4rem;
     background-color: white;
     margin-left: 2rem;
     position: absolute;
-    transform: translate(0px, 0px);
-    visibility: hidden;
+    top: 15.6rem;
+    height: 0px;
+    margin-left: 2rem;
+    overflow: hidden;
+    transition: height 1s ease;
   }  
 
   .MenuNovoCasa li .BoxFilhos5 {
@@ -3781,13 +3850,16 @@ li.item-action #btnSubimit:hover {
     padding-left: 0px;
     display: flex;
     flex-direction: column;
-    width: 21.1rem;
-    padding-top: 0px;
+    width: 20.4rem;
     background-color: white;
     margin-left: 2rem;
     position: absolute;
     transform: translate(0px, 0px);
-    visibility: hidden;
+    top: 18.7rem;
+    left: 23px;
+    overflow: hidden;
+    height: 0px;
+    transition: height 1s ease;
   }
   
   .MenuNovoCasa li .BoxFilhos6 {
@@ -3795,7 +3867,7 @@ li.item-action #btnSubimit:hover {
     padding-left: 0px;
     display: flex;
     flex-direction: column;
-    width: 21.1rem;
+    width: 23.4rem;
     padding-top: 0px;
     background-color: white;
     margin-left: 2rem;
@@ -3833,17 +3905,13 @@ li.item-action #btnSubimit:hover {
   }  
 
   .BoxBuscaPopUp.BoxAbertoMobile {
-    max-width: 100%;
-    width: fit-content;
-    height: 3.5rem;
+    width: 100%;
+    height: 40px;
     background-color: var(--color-white);
     justify-content: center;
     align-items: center;
     display: flex;
-    border-radius: 0;
-    width: 95%;
-    visibility: visible;
-    padding-left: 15px;
+    border-radius: 4px;
   }
 
   .MenuMobile {
@@ -3851,6 +3919,7 @@ li.item-action #btnSubimit:hover {
   }
 
   .IcoLogin {
+    /* display:none!important; */
   }
 
   .IcoMail {
@@ -3862,10 +3931,17 @@ li.item-action #btnSubimit:hover {
   }
 
   .TodasCategorias.categoria-pai.AbreMenuMobile ul {
-    transform: translate(0px, 5px);
-    position: relative;
-    transition: 1s ease-in-out;
-    visibility: visible;
+    position: absolute;
+    transition: height 1s ease-in-out;
+    height: 17rem!important;
+    margin-left: 1rem;
+  }
+
+  #header-wrapper > header > div > div.HeaderDois > ul > li.TodasCategorias.categoria-pai.BoxPai5.AbreMenuMobile > ul{
+    position: absolute;
+    transition: height 1s ease-in-out;
+    height: 34rem!important;
+    margin-left: 1rem;
   }
 
   body > div:nth-child(5) > div.boxNews1 > div > img{
@@ -3880,7 +3956,7 @@ li.item-action #btnSubimit:hover {
     padding: 5px;
     color: var(--color-dark)!important;
     text-decoration: none;
-    text-transform: initial;
+    text-transform: capitalize;
     padding-left: 15px;
   }
 
@@ -3890,8 +3966,8 @@ li.item-action #btnSubimit:hover {
 
   .TodasCategorias.categoria-pai.AbreMenuMobile .DiplayFlexMobile img,
   .TodasCategorias.categoria-pai.AbreMenuMobile .DiplayFlexMobile svg {
-    transform: rotate(270deg) !important;
-    background: var(--color-yellow);
+    transform: rotate(90deg) !important;
+    background: #EDD650;
   }
 
   .DiplayFlexMobile {
@@ -3899,8 +3975,8 @@ li.item-action #btnSubimit:hover {
     flex-direction: initial !important;
     justify-content: space-between;
     width: 100%;
-    align-items: center;
-    padding-top: 0.5rem;
+    /* align-items: center; */
+    /* padding-top: 0.5rem; */
     font-weight: 600;
   }
 
@@ -3910,22 +3986,21 @@ li.item-action #btnSubimit:hover {
   }
 
   #search-form input {
-    height: 2rem;
+    height: 35px;
     border: none;
     border-bottom: 1px solid var(--color-gray);
     box-shadow: none;
     transition: var(--transition);
     flex: 1;
+    box-sizing: border-box;
     color: var(--color-dark);
     font-size: 13px;
-    width: 0rem;
-    outline: none;
-    padding: 0;
+    width: 9rem;
+    padding-left: 5px;
 }
 
   .BoxBuscaPopUp.BoxAbertoMobile input::placeholder{
-    border: none!important;
-    color: var(--color-black-bg);
+    color: black;
   }
 
   .BoxBuscaPopUp button {
@@ -3937,8 +4012,8 @@ li.item-action #btnSubimit:hover {
   .BoxBuscaPopUp button svg {
     height: 24px;
     width: 24px;
-    top: -5px;
-    right: 35px;
+    margin-left: 0px;
+    margin-top: -0.2rem;
   }
 
   .BoxBuscaPopUp {
@@ -3994,12 +4069,12 @@ li.item-action #btnSubimit:hover {
 
   .IconeFecharBusca {
     padding: 5px;
-    border: 2px solid var(--color-darkgreen);
+    border: 2px solid var(--color-darkblue);
     width: 20px;
     height: 20px;
     text-align: center;
     border-radius: 50%;
-    color: var(--color-darkgreen);
+    color: var(--color-darkblue);
     font-weight: bold;
     font-size: 24px;
     line-height: 17px;
@@ -4008,7 +4083,7 @@ li.item-action #btnSubimit:hover {
   }
 
   div.boxNews {
-    background-color: var(--color-darkgreen);
+    background-color: var(--color-darkblue);
     color: var(--color-white);
     display: flex;
     justify-content: center;
@@ -4038,7 +4113,7 @@ li.item-action #btnSubimit:hover {
     width: 300px;
     outline: none;
     padding-left: 10px;
-    border: 1px solid var(--color-yellow);
+    border: 1px solid var(--color-redorange);
     background-color: var(--color-white);
   }
 
@@ -4144,7 +4219,7 @@ li.item-action #btnSubimit:hover {
   .line-divisor {
     height: 1px;
     width: 100%;
-    border-bottom: 1px solid var(--color-darkgreen);
+    border-bottom: 1px solid var(--color-darkblue);
     margin: 2em 0em;
   }
 
@@ -4188,7 +4263,7 @@ li.item-action #btnSubimit:hover {
 
   .lojas-item p:first-of-type {
     font-size: 14px;
-    color: var(--color-darkgreen);
+    color: var(--color-darkblue);
     text-transform: uppercase;
   }
 
@@ -4201,7 +4276,7 @@ li.item-action #btnSubimit:hover {
   .lojas-item a {
     margin: 0.8em 0em;
     padding: 16px 32px;
-    background-color: var(--color-darkgreen);
+    background-color: var(--color-darkblue);
     color: var(--color-white);
     border-radius: 5px;
     text-decoration: none;
@@ -4219,13 +4294,13 @@ li.item-action #btnSubimit:hover {
 
   .distri {
     background-color: var(--color-white) !important;
-    border: 1px solid var(--color-darkgreen);
+    border: 1px solid var(--color-darkblue);
   }
   
   .BoxGridBanners p {
     font-size: 1.2em;
     text-align: center;
-    border-bottom: 3px solid var(--color-darkgreen);
+    border-bottom: 3px solid #4C5820;
     color: var(--color-gray);
     text-transform: uppercase;
     white-space: nowrap;
@@ -4359,7 +4434,7 @@ li.item-action #btnSubimit:hover {
     display: flex;
     width:126px;
     height: 126px;
-    border: 3px solid var(--color-darkgreen);
+    border: 3px solid var(--color-darkblue);
     border-radius: 60%;
     align-items: center;
     justify-content: center;
@@ -4388,6 +4463,7 @@ li.item-action #btnSubimit:hover {
 
   .flash-component {
     z-index: 999;
+    background-color: #4C5820!important;
   }
 
   .VideoInstitucionalIsmafer h2 {
@@ -4432,8 +4508,16 @@ li.item-action #btnSubimit:hover {
 
   .DiplayFlexMobile {
     display: flex;
+    color: #4C5820;
     align-items: center;
   }
+
+  #header-wrapper > header > div > div.HeaderDois > ul > li.TodasCategorias.categoria-pai:hover > span{
+    color: #4C5820;
+  }
+
+  #header-wrapper > header > div > div.HeaderDois > ul > li.TodasCategorias.categoria-pai:hover > img{
+}
 
   .HideDesktop {
     display: none !important;
@@ -4449,9 +4533,10 @@ li.item-action #btnSubimit:hover {
 
   .BoxBuscaPopUp input {
     padding: 1em;
-    border: none;
+    border-bottom: thin solid var(--color-dark);
     margin: 0;
     background: transparent;
+    width: 20vw;
     outline: none;
   }
 
@@ -4464,7 +4549,7 @@ li.item-action #btnSubimit:hover {
     position: sticky;
     box-shadow: 0 0 10px rgba(000, 000, 000, .2);
     z-index: 5;
-    height: 5rem;
+    height: 6rem;
   }
 
   .HeaderUm {
@@ -4476,17 +4561,18 @@ li.item-action #btnSubimit:hover {
     position: relative;
   }
 
-  #search-form {
-    margin-left: 25px;
+  .BoxBuscaPopUp {
+    width: 3rem;
+    height: 5.4rem;
     display: flex !important;
-    position: absolute;
-    background-color: var(--color-white)!important;
-    justify-content: center;
+    background-color: white;
     align-items: center;
     flex-direction: row;
-    right: 10rem;
-    width: 0;
-    height: 4.9rem;
+    border-radius: 5px;
+    margin: 0;
+    right: 130px;
+    position: absolute;
+    transition: 1s ease-in-out;
   }
 
   * {
@@ -4506,57 +4592,47 @@ li.item-action #btnSubimit:hover {
   }
 
   #search-form input {
+    height: 26px;
+    border-bottom: 1px solid var(--color-gray);
     box-shadow: none;
+    transition: var(--transition);
     flex: 1;
     box-sizing: border-box;
     color: var(--color-black-bg);
     font-size: 16px;
-    width: 0;
-    transition: all ease-in-out 1s;
-    position: absolute;
-    background-color: transparent;
-    z-index: 999;
-    right: 5px;
+    width: 45rem;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
   }
-
-  .BoxAbertoMobile input{
-    width: 52rem!important;
-    border-bottom: thin solid var(--color-dark);
-    padding: 0.3em;
-    margin-right: 2rem;
-  }
-
-  
 
   #search-form input:focus {
     border: none;
-    border-bottom: 2px solid var(--color-darkgreen);
+    border-bottom: 2px solid var(--color-darkblue);
     box-shadow: none;
   }
 
   #search-form button {
     background: transparent;
     border: none;
-    width: 3rem;
-    height: 3rem;
-    right: 0px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 0 0 0 6px;
-    color: var(--color-darkgreen);
-    position: absolute;
+    position: initial;
+    border-radius: 12px;
   }
 
   #search-form button img {
-    height: 24px;
-    width: 24px;
-    margin-left: -10px;
+    height: 30px;
+    width: 30px;
+    margin-left: 0px;
+    margin-top: 5px;
   }
 
   .HeaderDois {
-    width: 65%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
   }
@@ -4566,6 +4642,12 @@ li.item-action #btnSubimit:hover {
     max-width: 68%;
     margin: 0 auto;
     padding-bottom: 6px;
+    padding-top: 6px;
+  }
+
+  #search-form:hover button{
+    background-color: #4C5820;
+    transition: 0.6s ease-in;
   }
 
   .MenuNovoCasa .categoria-pai:last-child {
@@ -4585,7 +4667,6 @@ li.item-action #btnSubimit:hover {
     list-style: none;
     display: flex;
     gap: 12px;
-    z-index: -1;
   }
 
   .HeaderCustomHtml ul:not(#teste > ul > div > li > ul) {
@@ -4593,7 +4674,7 @@ li.item-action #btnSubimit:hover {
   }
 
   #header-wrapper > header > div.HeaderDois > ul > li > ul > div{
-    border-bottom: solid 1px var(--color-darkgreen);
+    border-bottom: solid 1px var(--color-darkblue);
   }
 
   .nav-fashion-header {
@@ -4628,7 +4709,7 @@ li.item-action #btnSubimit:hover {
 
   .IconsTopo img,
   .IconsTopo svg {
-    max-width: 27px;
+    max-width: 35px;
     cursor: pointer;
   }
 
@@ -4642,7 +4723,8 @@ li.item-action #btnSubimit:hover {
   }
 
   .IconsTopo li {
-    margin-right: 1em;
+    margin-right: 0em;
+    margin-left: 2em;
   }
 
   .IcoLogin a {
@@ -4656,11 +4738,10 @@ li.item-action #btnSubimit:hover {
   }
 
   .IcoLogin a:hover {
-    color: var(--color-darkgreen);
+    color: var(--color-darkblue);
   }
 
   .IcoLogin img {
-    width: 100%;
     margin-bottom: 3px;
   }
 
@@ -4682,7 +4763,7 @@ li.item-action #btnSubimit:hover {
   .TodasCategorias svg,
   .TodasCategorias img {
     max-width: 85%;
-    margin-right: 2.3em;
+    /* margin-right: 2.3em; */
   }
 
   ul.MenuNovoCasa li.categoria-pai {
@@ -4693,7 +4774,8 @@ li.item-action #btnSubimit:hover {
     font-size: 14px;
     padding: 9px 10px;
     left: 0px;
-    width: auto;
+    width: 10rem;
+    flex-direction: column;
   }
 
   ul.Boxfilho li,
@@ -4718,7 +4800,7 @@ li.item-action #btnSubimit:hover {
   .LogoTopo {
     background-color: transparent;
     height: auto;
-    padding-top: 15px;
+    padding-top: 0;
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -4755,18 +4837,17 @@ li.item-action #btnSubimit:hover {
     transition: all ease .3s;
     line-height: 1em;
     justify-self: center;
-    color: var(--color-black-bg);
+    color: var(--color-black);
     font-weight: bold;
     /*white-space: nowrap;*/
   }
 
   li.categoria-pai:hover {
-    /*background: var(--color-darkgreen);
+    /*background: var(--color-darkblue);
     color: var(--color-dark);*/
     border-radius: 0.5em 0.5em 0em 0em;
     cursor: pointer;
     font-weight: bold;
-    background-color: var(--color-darkgreen);
     top: 0px;
     transition: all ease-in-out .5s;
   }
@@ -4777,7 +4858,7 @@ li.item-action #btnSubimit:hover {
   }
 
   ul.BoxfilhoTodasCategorias a {
-    color: var(--color-dark);
+    color: var(--color-dark)!important;
     display: block;
     transition: all ease .3s;
     margin-bottom: 10px;
@@ -4816,35 +4897,34 @@ li.item-action #btnSubimit:hover {
     content: "";
     height: 10px;
     background: transparent;
-    width: 234px;
+    width: 214px;
     bottom: 0px;
     position: absolute;
-    top: 47px;
+    top: 0;
   }
 
   .MenuNovoCasa .TodasCategorias .DiplayFlexMobile:after {
     content: '';
     position:absolute;
     background: transparent;
-    height: 5px;
+    height: 0;
     width: 100%;
-    bottom: 0;
-    left: 0;
-    transition: all ease-in-out .3s;
-    /* border-radius: 25px; */
-    display: block;
-    margin: auto;
-    top: 47px;
-    transform: translate(0px, -5px);
+    bottom: 0px;
+    left: 0px;
+    transition: all ease-in-out .2s;
+    /* display: block; */
+    /* margin: auto; */
+    top: 6px;
+    transform: translate(0px, -12px);
   }
 
   .MenuNovoCasa .TodasCategorias:hover .DiplayFlexMobile:after {
-    content: '';
-    height: 5px;
+    /* content: ''; */
+    height: 6rem;
     width: 100%;
-    background: var(--color-darkgreen);
-    transition: all ease-in-out .5s;
-    top: 47px;
+    background: #E5C406;
+    transition: all ease-in-out .2s;
+    z-index: -1;
   }
 
   ul.BoxfilhoTodasCategorias a:hover {
@@ -4852,7 +4932,7 @@ li.item-action #btnSubimit:hover {
   }
 
   li.linkNetos a:hover {
-    color: var(--color-darkgreen) !important;
+    color: var(--color-darkblue) !important;
     text-decoration: underline;
   }
 
@@ -4863,7 +4943,7 @@ li.item-action #btnSubimit:hover {
   .BoxMaisCategorias a {
     display: block;
     text-align: left;
-    color: var(--color-white)!important;
+    color: var(--color-dark)!important;
     text-decoration: none;
     margin-bottom: 12px;
     font-weight: bold !important;
@@ -4879,7 +4959,7 @@ li.item-action #btnSubimit:hover {
   }
 
  .LinksFilhos:hover {
-   color: var(--color-darkgreen) !important;
+   color: var(--color-darkblue) !important;
    text-decoration: underline;
 }
 
@@ -4896,7 +4976,7 @@ li.item-action #btnSubimit:hover {
   }
 
   .ClassFilho:hover {
-    /* color: var(--color-darkgreen) !important; */
+    /* color: var(--color-darkblue) !important; */
   }
 
   img.logo-benova {
@@ -4921,13 +5001,13 @@ li.item-action #btnSubimit:hover {
     display: flex;
     justify-content: space-between;
     gap: 2em;
-    background: var(--color-dark);
+    background: white;
     opacity: 1;
     position: absolute;
-    height: 145px;
+    height: 175px;
     left: 0;
-    top: 37px;
-    min-width: 300px !important;
+    top: 71px;
+    min-width: 340px !important;
     border-radius: 0em 0em 0em 0em;
     z-index: 9999;
   }
@@ -4936,11 +5016,11 @@ li.item-action #btnSubimit:hover {
     display: flex;
     justify-content: space-between;
     gap: 2em;
-    background: var(--color-dark);
+    background: var(--color-white);
     opacity: 1;
     position: absolute;
     height: 150px;
-    top: 37px;
+    top: 71px;
     min-width: 375px !important;
     z-index: 9999;
   }
@@ -4949,11 +5029,11 @@ li.item-action #btnSubimit:hover {
     display: flex;
     justify-content: space-between;
     gap: 2em;
-    background: var(--color-dark);
+    background: var(--color-white);
     opacity: 1;
     position: absolute;
     height: 145px;
-    top: 37px;
+    top: 71px;
     min-width: 315px !important;
     z-index: 9999;
   }
@@ -4962,11 +5042,11 @@ li.item-action #btnSubimit:hover {
     display: flex;
     justify-content: space-between;
     gap: 2em;
-    background: var(--color-dark);
+    background: var(--color-white);
     opacity: 1;
     position: absolute;
     height: 160px;
-    top: 37px;
+    top: 71px;
     min-width: 300px !important;
     z-index: 9999;
   }  
@@ -5010,7 +5090,7 @@ li.item-action #btnSubimit:hover {
 
   ul.MenuNovoCasa li.TodasCategorias:hover ul.BoxFilhos2 li.VaiTerNetos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: .3fr .3fr .3fr .3fr;
     grid-auto-flow: column;
     grid-gap: 0px 30px;
@@ -5071,11 +5151,11 @@ li.item-action #btnSubimit:hover {
   ul.MenuNovoCasa li.TodasCategorias:hover ul.BoxfilhoMaisCategorias {
     display: flex;
     flex-direction: column;
-    background: var(--color-dark);
+    background: var(--color-white);
     opacity: 1;
     position: absolute;
     height: fit-content !important;
-    top: 37px;
+    top: 71px;
     min-width: 300px !important;
     border-top: 0px;
     padding: 0;
@@ -5104,7 +5184,7 @@ li.item-action #btnSubimit:hover {
     gap: 2em;
     z-index: -1;
     opacity: 0;
-    border-bottom: 1px solid var(--color-darkgreen);
+    border-bottom: 1px solid var(--color-darkblue);
     overflow: hidden;
     pointer-events: none;
   }
@@ -5121,6 +5201,11 @@ li.item-action #btnSubimit:hover {
 
   .BoxfilhoMaisCategorias .BoxMaisCategorias a {
     margin-bottom: 0;
+  }
+
+  .telefone,
+  .atendimento{
+    display: none;
   }
 
   .nav-logo-float-left .nav-fashion-header__nav-icons {
@@ -5140,7 +5225,7 @@ li.item-action #btnSubimit:hover {
   }
 
 /* .FilhoDoPai a:first-of-type:hover {
-    background-color: var(--color-darkgreen);
+    background-color: var(--color-darkblue);
     color: var(--color-dark) !important;
     font-weight: 600;
   }
@@ -5168,7 +5253,7 @@ li.item-action #btnSubimit:hover {
   }
 
   .UlNetos li.TituloNetos {
-    color: var(--color-darkgreen);
+    color: var(--color-darkblue);
     text-transform: uppercase;
   }
 
@@ -5194,7 +5279,7 @@ li.item-action #btnSubimit:hover {
 
   .categoria-pai>a,
   .categoria-pai span>a {
-    color: var(--color-black-bg) !important;
+    color: var(--color-white) !important;
     text-decoration: none !important;
   }
 
@@ -5234,15 +5319,16 @@ li.item-action #btnSubimit:hover {
   }
 
   .BoxBuscaPopUp.BoxAbertoMobile {
-    width: 56rem!important;
-    background: #f9f9f9;
-    position: fixed;
-    height: auto;
+    max-width: 58rem;
+    width: 58rem;
+    height: 5.4rem;
     z-index: 999;
-    justify-content: center;
     align-items: center;
     display: flex;
-    height: 5rem;
+    color: black;
+    transition: 1s ease-in-out;
+    position: absolute;
+    right: 130px;
   }
 
   .BoxBuscaPopUp.BoxAbertoDesktop {
@@ -5261,12 +5347,12 @@ li.item-action #btnSubimit:hover {
 
   .IconeFecharBusca {
     padding: 5px;
-    border: 2px solid var(--color-darkgreen);
+    border: 2px solid var(--color-darkblue);
     width: 20px;
     height: 20px;
     text-align: center;
     border-radius: 50%;
-    color: var(--color-darkgreen);
+    color: var(--color-darkblue);
     font-weight: bold;
     font-size: 24px;
     line-height: 17px;
@@ -5277,11 +5363,12 @@ li.item-action #btnSubimit:hover {
   .BoxBuscaPopUp input {
     visibility: visible !important;
     opacity: 1 !important;
-    max-width: 726px;
+    width: 0px!important;
+    padding: 0!important;
   }
 
   .TxtBoasVindas p:first-child {
-    color: var(--color-darkgreen);
+    color: var(--color-darkblue);
   }
 
   body::-webkit-scrollbar {
@@ -5298,7 +5385,7 @@ li.item-action #btnSubimit:hover {
 
   body::-webkit-scrollbar-thumb:vertical {
     height: 5px;
-    background-color: var(--color-darkgreen);
+    background-color: var(--color-darkblue);
   }
 
   body::-webkit-scrollbar-thumb:horizontal {
@@ -5313,6 +5400,7 @@ li.item-action #btnSubimit:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 16px;
   }
 
   .Powered ul li {
@@ -5367,9 +5455,8 @@ li.item-action #btnSubimit:hover {
       "B B B B Bcinco";
     padding: 2em;
     margin: 0 auto;
-    grid-template-columns: 15vw 12vw 11vw 15vw 15vw;
+    grid-template-columns: 20vw 17vw 17vw 17vw 15vw;
     grid-template-rows: 7rem 3rem;
-    max-width: 65vw;
   }
 
   .FirstFooter .Bum{
@@ -5400,7 +5487,7 @@ li.item-action #btnSubimit:hover {
   }
 
   footer .bg-FirstFooter {
-    background-color: var(--color-darkgreen);
+    background-color: #4C5820;
     display: flex;
     flex-direction: column;
   }
@@ -5520,7 +5607,7 @@ li.item-action #btnSubimit:hover {
   }
 
   .BoxCarrosselMarcas .slick-dots li button{
-  background-color: #4C5820!important;
+  background-color: #4C5820 !important;
   border-radius: 0%;
   height: 5px;
   width: 35px!important;
@@ -5537,7 +5624,7 @@ li.item-action #btnSubimit:hover {
   }
 
   .BoxCarrosselMarcas .ListaCategorias .slick-dots > li.slick-active button{
-    background-color: #E6C60E!important;
+    background-color: #EDD650!important;
   }
 
   
@@ -5554,10 +5641,10 @@ li.item-action #btnSubimit:hover {
     .BoxCarrosselMarcas ul li img,
     .BoxCarrosselMarcas ul li svg {
       transition: all ease .3s;
-      max-width: 230px;
+      max-width: 14vw;
       align-self: center;
       margin: 0px;
-      height: 230px;
+      height: 17em;
     }
   
     .BoxCarrosselMarcas ul li .imgMarca{
@@ -5696,23 +5783,24 @@ li.item-action #btnSubimit:hover {
   }
 
   .BoxCarrosselMarcas .slick-next.slick-arrow {
-    background: url('https://arquivos.fjmagazine.com.br/CarrosselMarcas/direita.png');
-    width: 195px;
-    height: 35px;
+    background: url('https://lunnar.com.br/cidadeecampo/icons/Esquerda.svg');
+    width: 140px;
+    height: 25px;
     border: none;
     background-position: center left;
     background-repeat: no-repeat;
     outline: none;
     font-size: 0px;
+    transform: rotate(180deg);
     margin-left: 1em;
     cursor: pointer;
     background-size: cover;
   }
 
   .BoxCarrosselMarcas .slick-prev.slick-arrow {
-    background: url('https://arquivos.fjmagazine.com.br/CarrosselMarcas/esquerda.png');
-    width: 195px;
-    height: 35px;
+    background: url('https://lunnar.com.br/cidadeecampo/icons/Esquerda.svg');
+    width: 140px;
+    height: 25px;
     border: none;
     background-position: center left;
     background-repeat: no-repeat;
@@ -5795,7 +5883,7 @@ li.item-action #btnSubimit:hover {
   .menuInstitucionaisBox {
     margin-top: 0px;
     /* margin-left: 5vw; */
-    background-color: var(--color-darkgreen);
+    background-color: var(--color-darkblue);
     padding-left: 0px;
     /* display: flex; */
     /* width: 72vw; */
@@ -5836,7 +5924,7 @@ li.item-action #btnSubimit:hover {
   .menuInstitucionaisBox li:hover {
     color: var(--color-white);
     text-decoration: none;
-    background-color: var(--color-yellow);
+    background-color: var(--color-redorange);
   }
 
   .menuInstitucionaisBox li:hover {
@@ -5846,7 +5934,7 @@ li.item-action #btnSubimit:hover {
 
   li.MenuAtivoInstitucionais {
     color: var(--color-white);
-    background: var(--color-darkgreen);
+    background: var(--color-darkblue);
   }
 
   .conteudoUm {
@@ -5904,7 +5992,7 @@ li.item-action #btnSubimit:hover {
   .line-divisor {
     height: 1px;
     width: 100%;
-    border-bottom: 1px solid var(--color-darkgreen);
+    border-bottom: 1px solid var(--color-darkblue);
     margin: 2em 0em;
   }
 
@@ -5945,7 +6033,7 @@ li.item-action #btnSubimit:hover {
 
   .lojas-item p:first-of-type {
     font-size: 12px;
-    color: var(--color-darkgreen);
+    color: var(--color-darkblue);
     text-transform: uppercase;
   }
 
@@ -5957,7 +6045,7 @@ li.item-action #btnSubimit:hover {
 
   .lojas-item a {
     padding: 12px 28px;
-    background-color: var(--color-darkgreen);
+    background-color: var(--color-darkblue);
     color: var(--color-white) !important;
     border-radius: 5px;
     text-decoration: none !important;
@@ -5976,6 +6064,6 @@ li.item-action #btnSubimit:hover {
 
   .distri {
     background-color: var(--color-white) !important;
-    border: 1px solid var(--color-darkgreen);
+    border: 1px solid var(--color-darkblue);
   }
 }
