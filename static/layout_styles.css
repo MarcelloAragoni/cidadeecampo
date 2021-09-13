@@ -10,6 +10,15 @@
   user-select: none;
 }
 
+
+.header-wrapper--fixed+main>.ui-pdp--error, 
+.header-wrapper--fixed+main>.ui-pdp-not-found, 
+.header-wrapper--fixed+main>.ui-search, 
+.header-wrapper--fixed+main>.ui-search--zrp, 
+.header-wrapper--fixed+main>.ui-vip-core{
+  padding-top: 40px!important; 
+}
+
 .header-wrapper--fixed+main>.ui-vip-core{
   padding-top: 50px;
 }
@@ -2460,7 +2469,7 @@ body {
   --transition: all ease .3s;
   --color-dark: #313131;
   --color-white: #ffffff;
-  --color-darkblue: #123657;
+  --color-darkblue: #4C5820;
   --color-orange-h: #EEEEEE;
   --color-gray: #5e5e5e;
   --color-gray-c: #f4f6f9;
@@ -2577,8 +2586,8 @@ div.boxNews1 {
 div.wrapForm {
   display: flex;
   justify-content: space-between;
-  max-width: 1366px;
-  width: 1200px;
+  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
@@ -2709,7 +2718,9 @@ li.item-action #btnSubimit:hover {
     cursor: pointer;
     position: absolute;
     z-index: 999;
-    right: 22px;
+    transform: rotate(180deg);
+    top: 85px;
+    right: -30px;
   }
 
   .BoxCarrosselMarcas .slick-prev.slick-arrow {
@@ -2724,7 +2735,8 @@ li.item-action #btnSubimit:hover {
     cursor: pointer;
     position: absolute;
     z-index: 999;
-    left: -10px;
+    left: -25px;
+    top: 85px;
   }
 
   .BoxGridBanners ul {
@@ -2766,22 +2778,18 @@ li.item-action #btnSubimit:hover {
   }
 
   .BoxCarrosselMarcas ul li a img {
-    width: 80%;
+    width: 90%;
   }
 
   .BoxCarrosselMarcas ul {
     padding-left: 0px;
     list-style: none;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    padding: 1em;
-    height: 17em;
     margin: 0;
     padding: 0;
-    left: 20px;
-    width: 94%;
+    left: 30px;
+    width: 85%;
+    position: absolute;
+    height: 200px;
   }
 
   .BoxCarrosselMarcas.BoxCarrosselCategorias{
@@ -2791,12 +2799,13 @@ li.item-action #btnSubimit:hover {
   
   .BoxCarrosselMarcas ul .slick-dots{
     position: absolute;
-    top: 0.5rem;
+    top: 0rem;
     height: 4px;
     padding-top: 0;
-    width: 100%;
-    left: -1.5em;
-  }  
+    width: fit-content;
+    left: 1em;
+    display: flex;
+  } 
 
   .BoxCarrosselCategorias ul .slick-dots li button {
     height: 5px;
@@ -4491,7 +4500,7 @@ flex-direction: column;
   }
 
   .BoxCarrosselCategorias a {
-    height: 300px !important;
+    height: 101px !important;
   }
 
   .BoxCarrosselCategorias a img {
@@ -4499,7 +4508,7 @@ flex-direction: column;
   }
 
   .BoxCarrosselMarcas.BoxCarrosselCategorias {
-    height: 340px;
+    height: 250px;
   }
 
   .BoxCarrosselCategorias {
@@ -4510,6 +4519,7 @@ flex-direction: column;
     display: flex;
     color: #4C5820;
     align-items: center;
+    text-transform: capitalize;
   }
 
   #header-wrapper > header > div > div.HeaderDois > ul > li.TodasCategorias.categoria-pai:hover > span{
@@ -4795,6 +4805,7 @@ flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-transform: capitalize;
   }
 
   .LogoTopo {
@@ -5047,7 +5058,7 @@ flex-direction: column;
     position: absolute;
     height: 160px;
     top: 71px;
-    min-width: 300px !important;
+    min-width: 352px !important;
     z-index: 9999;
   }  
 
@@ -5563,26 +5574,14 @@ flex-direction: column;
     .BoxCarrosselMarcas ul {
       padding-left: 15px;
       list-style: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       margin: 0 auto;
       max-height: 200px;
       width: 65%;
-      padding-top: 5rem;
-      top: 10px;
+      padding-top: 0rem;
+      top: 0px;
+      position: relative;
+      height: 200px;
     }
-  
-    .BoxCarrosselMarcas .ListaMarcas2 {
-      padding-left: 0px;
-      list-style: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto;
-      max-height: 145px;
-      width: 95%;
-  }
   
 
   .BoxCarrosselMarcas  .ListaCategorias .slick-dots li.slick-active button:before {
@@ -5599,11 +5598,12 @@ flex-direction: column;
 
   .BoxCarrosselMarcas ul .slick-dots {
     position: absolute;
-    top: -0.5rem;
+    top: 0em;
     height: 5px;
     padding-top: 0;
-    width: 100%;
-    left: -1.5em;
+    width: fit-content;
+    display: flex;
+    left: 28.9vw;
   }
 
   .BoxCarrosselMarcas .slick-dots li button{
@@ -5644,7 +5644,6 @@ flex-direction: column;
       max-width: 14vw;
       align-self: center;
       margin: 0px;
-      height: 17em;
     }
   
     .BoxCarrosselMarcas ul li .imgMarca{
@@ -5784,23 +5783,26 @@ flex-direction: column;
 
   .BoxCarrosselMarcas .slick-next.slick-arrow {
     background: url('https://lunnar.com.br/cidadeecampo/icons/Esquerda.svg');
-    width: 140px;
-    height: 25px;
+    width: 30px;
+    height: 34px;
     border: none;
     background-position: center left;
     background-repeat: no-repeat;
     outline: none;
     font-size: 0px;
-    transform: rotate(180deg);
     margin-left: 1em;
     cursor: pointer;
     background-size: cover;
+    position: absolute;
+    top: 75px;
+    right: -15px;
+    transform: rotate(180deg);
   }
 
   .BoxCarrosselMarcas .slick-prev.slick-arrow {
     background: url('https://lunnar.com.br/cidadeecampo/icons/Esquerda.svg');
-    width: 140px;
-    height: 25px;
+    width: 31px;
+    height: 35px;
     border: none;
     background-position: center left;
     background-repeat: no-repeat;
@@ -5808,6 +5810,10 @@ flex-direction: column;
     font-size: 0px;
     cursor: pointer;
     background-size: cover;
+    position: absolute;
+    z-index: 999;
+    left: -5px;
+    top: 75px;
   }
 
   .BoxCarrosselMarcas a {
@@ -6066,4 +6072,13 @@ flex-direction: column;
     background-color: var(--color-white) !important;
     border: 1px solid var(--color-darkblue);
   }
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: white;
 }

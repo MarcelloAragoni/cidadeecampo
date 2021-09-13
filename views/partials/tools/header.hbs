@@ -2,12 +2,9 @@
 
 <div class="header-wrapper header-wrapper--fixed {{headerAdditionalClasses}}" id="header-wrapper"
 	data-ms-theme="fashion">
-	<div class="flash-component header--custom-secondary-background header--custom-text">
-  		<h3 class="flash-component__text header--custom-secondary-text">
-    		<p>FRETE GRÁTIS A PARTIR DE R$79,99.</p>
-  		</h3>
-   		<a class="flash-component__link" href=""></a>
-  	</div>
+	{{#if flash.enabled}}
+    {{> components/flash}}
+    {{/if}}
 	<header class="header HeaderCustomHtml">
 
 		<div class="HeaderUm">
@@ -46,7 +43,7 @@
                         </div>
                         <div class="BoxMaisCategorias">
                             <li class="FilhoDoPai">
-                                <a href="https://www.cidadeecampo.com.br/lista/ferramentas-jardim/">Ferramentas para jardim</a>                             
+                                <a href="https://www.cidadeecampo.com.br/lista/ferramentas-jardim/">Ferramentas para jardinagem</a>                             
                             </li>
                         </div>
                         <div class="BoxMaisCategorias">
@@ -56,7 +53,7 @@
                         </div>
                         <div class="BoxMaisCategorias">
                             <li class="FilhoDoPai">
-                                <a href="https://www.cidadeecampo.com.br/lista/caixas-e-organizadores/">Caixas e Organizadores</a>                                
+                                <a href="https://www.cidadeecampo.com.br/lista/caixas-e-organizadores/">Caixas Para Ferramentas</a>                                
                             </li>
                         </div>
                         <div class="BoxMaisCategorias">
@@ -67,7 +64,7 @@
                     	</ul>
 					</li>		               											
 					<li class="TodasCategorias categoria-pai BoxPai2">
-						<img src="https://lunnar.com.br/cidadeecampo/menu/menu2.png" alt="">
+						<img src="https://lunnar.com.br/cidadeecampo/menu/menu2.svg" alt="" width="29%">
 							<span class="DiplayFlexMobile">
 								Jardinagem e Agricultura
 								<i class="HideDesktop ArrowMenuMobile">
@@ -90,7 +87,7 @@
 						</ul>
 					</li>
 					<li class="TodasCategorias categoria-pai BoxPai3">
-						<img src="https://lunnar.com.br/cidadeecampo/menu/menu3.png" alt="">
+						<img src="https://lunnar.com.br/cidadeecampo/menu/menu4.png" alt="">
 							<span class="DiplayFlexMobile">
 								Ar e Ventilação
 								<i class="HideDesktop ArrowMenuMobile">
@@ -113,7 +110,7 @@
 						</ul>
 					</li>
 					<li class="TodasCategorias categoria-pai BoxPai4">
-						<img src="https://lunnar.com.br/cidadeecampo/menu/menu4.png" alt="">
+						<img src="https://lunnar.com.br/cidadeecampo/menu/menu3.png" alt="">
 							<span class="DiplayFlexMobile">
 								Construção Civil
 								<i class="HideDesktop ArrowMenuMobile">
@@ -136,7 +133,7 @@
 						</ul>
 					</li>
 					<li class="TodasCategorias categoria-pai BoxPai5">
-						<img src="https://lunnar.com.br/cidadeecampo/menu/menu5.png" alt="">
+						<img src="https://lunnar.com.br/cidadeecampo/menu/menu5.png" alt="" style="width: auto; height: 40px;">
 							<span class="DiplayFlexMobile">
 								Marcas Líder
 								<i class="HideDesktop ArrowMenuMobile">
@@ -153,12 +150,13 @@
                            		<a class="ClassFilho" href="https://www.cidadeecampo.com.br/menegotti">menegotti</a>
                            	    <a class="ClassFilho" href="https://www.cidadeecampo.com.br/vonder">vonder</a>
 	 							<a class="ClassFilho" href="https://www.cidadeecampo.com.br/garthen">garthen</a>
+								<a class="ClassFilho" href="https://www.cidadeecampo.com.br/Bovenau">Bovenau</a>
                            		<a class="ClassFilho" href="https://www.cidadeecampo.com.br/motomil">motomil</a>
-                           	    <a class="ClassFilho" href="https://www.cidadeecampo.com.br/cidG">cidG</a>
+                           	    <a class="ClassFilho" href="https://www.cidadeecampo.com.br/cidG">cID</a>
 	 							<a class="ClassFilho" href="https://www.cidadeecampo.com.br/trapp">trapp</a>
                            		<a class="ClassFilho" href="https://www.cidadeecampo.com.br/ventisol">Ventisol</a>
-                           	    <a class="ClassFilho" href="https://www.cidadeecampo.com.br/lorenzetti">Lorenzettti</a>
-	 							<a class="ClassFilho" href="https://www.cidadeecampo.com.br/metalsul">metal sul</a>
+                           	    <a class="ClassFilho" href="https://www.cidadeecampo.com.br/lorenzetti">Lorenzetti</a>
+	 							<a class="ClassFilho" href="https://www.cidadeecampo.com.br/metalsul">metalsul</a>
                            		<a class="ClassFilho" href="https://www.cidadeecampo.com.br/karcher">karcher</a>
                            	    <a class="ClassFilho" href="https://www.cidadeecampo.com.br/starflex">starflex</a>								   								   							
 							</li>
